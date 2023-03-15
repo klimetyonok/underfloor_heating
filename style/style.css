@@ -1,0 +1,16 @@
+html {
+box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Inter, sans-serif;
+}
+
+.container {
+    max-width: 1190px;
+    margin: 0 auto;
+}
