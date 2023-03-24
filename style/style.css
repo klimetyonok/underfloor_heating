@@ -1,7 +1,7 @@
 :root {
   --width-slide: 590px;
-  --width-block: calc(50% - 10px);
   --gap: 10px;
+  --width-block: calc(50% - var(--gap) / 2);
   --padding: 50px;
 }
 
