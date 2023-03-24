@@ -118,6 +118,7 @@
 }
 
 .calc__result-wrapper {
+  display: none;
   flex-basis: 303px;
   padding: 24px;
   background-color: #fff;
