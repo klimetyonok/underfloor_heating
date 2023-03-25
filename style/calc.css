@@ -48,6 +48,16 @@
   line-height: 150%;
   color: #232020;
   padding: 0 25px;
+  outline: none;
+}
+
+.calc__input-number:hover,
+.calc__input-number:focus {
+  border-color: #ffc700;
+}
+
+.calc__input-number::-webkit-inner-spin-button {
+  display: none;
 }
 
 .calc__fieldset_tariff {
@@ -76,6 +86,7 @@
   height: 24px;
   position: relative;
   margin-right: 8px;
+  outline-color: #ffc700;
 }
 
 .calc__input-radio::before {

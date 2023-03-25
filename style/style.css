@@ -37,6 +37,11 @@ body {
 .link {
   text-decoration: none;
   color: inherit;
+  transition: color 0.2s ease-in-out;
+}
+
+.link:not(.hero__link):hover {
+  color: #fcc80b;
 }
 
 .image {
@@ -52,6 +57,39 @@ body {
   color: #232020;
   text-transform: uppercase;
   background-color: #ffc700;
+  border: 1px solid #ffc700;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.button_o {
+  background-color: transparent;
+  border: 1px solid #232020;
+}
+
+.button:hover {
+  background-color: #FFD952;
+  border-color: #FFD952;
+}
+
+.button:focus-visible {
+  border-color: #9E7B00;
+}
+
+.button_o:focus-visible {
+  border-color: #FFC700;
+}
+
+.button:active {
+  transform: translate(2px, 2px);
+}
+
+.button:disabled {
+  pointer-events: none;
+  background-color: #E0E0E0;
+  border-color: #E0E0E0;
+  color: #898989;
+  cursor: default;
 }
 
 .section__offset {

@@ -27,12 +27,27 @@ const calcForm = document.querySelector('.js-calc-form');
 const totalSquare = document.querySelector('.js-square');
 const totalPrice = document.querySelector('.js-total-price');
 const calcResultWrapper = document.querySelector('.js-result-wrapper');
+const btnSubmit = document.querySelector('.js-submit');
 
 const tariff = {
     economy: 550,
     comfort: 1400,
     premium: 2700,
 }
+
+calcForm.addEventListener('input', () => {
+    if (calcForm.width.value > 0 && calcForm.length.value > 0) {
+        btnSubmit.disabled = false
+    } else {
+        btnSubmit.disabled = true;
+    }
+});
+
+/*
+calcForm.addEventListener('input', () => {
+    btnSubmit.disabled = !(calcForm.width.value > 0 && calcForm.length.value > 0);
+});
+*/
 
 calcForm.addEventListener('submit', (event) => {
     event.preventDefault();
