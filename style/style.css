@@ -40,10 +40,6 @@ body {
   transition: color 0.2s ease-in-out;
 }
 
-.link:not(.hero__link):hover {
-  color: #fcc80b;
-}
-
 .image {
   max-width: 100%;
   height: auto;

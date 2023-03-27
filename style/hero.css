@@ -34,6 +34,10 @@
   margin-bottom: 32px;
 }
 
+.hero__link {
+  text-decoration: none;
+}
+
 .hero__image {
   width: var(--width-slide);
   max-width: 100%;
